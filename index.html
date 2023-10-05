@@ -52,32 +52,41 @@
   <section class="container-fluid">
     <div class="row bg-dark text-white">
 
-      <div class="col-7">
-        <div id="carouselCity" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+      <div class="col-lg-7 p-0">
+        <div id="carouselCidades" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselCidades" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCidades" data-slide-to="1"></li>
+            <li data-target="#carouselCidades" data-slide-to="2"></li>
+          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/california.jpg" class="d-block w-100" alt="...">
+              <img class="d-block w-100" src="img/california.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">California</h3>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="/img/paris.jpg" class="d-block w-100" alt="...">
+              <img class="d-block w-100" src="img/paris.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Paris</h3>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="/img/dublin.jpg" class="d-block w-100" alt="...">
+              <img class="d-block w-100" src="img/dublin.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Dublin</h3>
+              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCity" data-bs-slide="prev">
+          <a class="carousel-control-prev" href="#carouselCidades" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselCity" data-bs-slide="next">
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCidades" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
       </div>
 
