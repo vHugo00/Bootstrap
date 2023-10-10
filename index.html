@@ -14,7 +14,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow ">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
     <a href="index.html" class="navbar-brand">
       <img src="img/caravan.svg" alt="Caravan">
     </a>
@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopud="true" aria-expanded="false">Locais</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="local.html">California</a>
             <a class="dropdown-item" href="local.html">Paris</a>
@@ -40,7 +40,7 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -167,7 +167,36 @@
     </div>
   </section>
 
+  <section id="home-quote" class="p-md-5">
+    <blockquote class=" blockquote text-center text-white p-md-5 p-3">
+      <em>
+        <p class=" display-4 "> "A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada."</p>
+        <footer class="blockquote-footer text-white">Bob Dylan</footer>
+      </em>
+    </blockquote>
+  </section>
 
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block ">AINDA ESTÁ COM DÚVIDAS?</span>
+      <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-6" id="perguntasFrequentes" data-children=".pergunta">
+        <div class="pergunta">
+
+          <a class="lead " data-toggle="collapse" data-parent="#perguntasFrequentes" href="pergunta1" aria-expanded="true" aria-controls="pergunta1"> É possível cancelar a viagem?</a>
+
+          <div id="pergunta1" class="collapse show" role="tabpanel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
